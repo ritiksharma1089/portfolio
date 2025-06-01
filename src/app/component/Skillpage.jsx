@@ -1,7 +1,8 @@
 'use client';
 
 import React from 'react';
-import SkillCard from './SkillCard'; // Adjust path as needed
+import SkillCard from './Skillcard';
+
 
 const skills = [
   { skill: 'Java', level: 80 },
