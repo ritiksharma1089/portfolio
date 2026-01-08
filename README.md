@@ -24,13 +24,6 @@ Styling: Tailwind CSS
 
 Deployment: Vercel
 
-▶️ Run Locally
-git clone [https://github.com/your-username/portfolio.git](https://github.com/ritiksharma1089/portfolio.git)
-cd portfolio
-npm install
-npm run dev
-
-🎯 Purpose
 
 This portfolio is designed to:
 
