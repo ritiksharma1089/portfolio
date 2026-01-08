@@ -1,8 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import Image from 'next/image'; // If using Next.js <Image> component
-// import profilePic from '@/public/pic.png'; // Replace with actual image path
+import Image from 'next/image'; 
 
 export default function AboutHero() {
 return (
@@ -10,7 +9,6 @@ return (
         <div className="container">
             <div className="row align-items-center gy-4">
                 
-                {/* LEFT - Profile Image */}
                 <motion.div
                     className="col-lg-5 text-center"
                     initial={{ opacity: 0, x: -50 }}
@@ -27,7 +25,6 @@ return (
                     />
                 </motion.div>
 
-                {/* RIGHT - About Text */}
                 <motion.div
                     className="col-lg-7"
                     initial={{ opacity: 0, x: 50 }}

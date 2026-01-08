@@ -11,12 +11,10 @@ const Navbar = () => {
     return (
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
             <div className="container-fluid">
-                {/* Logo and App Name */}
                 <Link className="navbar-brand d-flex align-items-center text-light" href="/">
                     <RijikHeader />
                 </Link>
 
-                {/* Toggler button */}
                 <button
                     className="navbar-toggler"
                     type="button"
@@ -28,7 +26,6 @@ const Navbar = () => {
                     <span className="navbar-toggler-icon"></span>
                 </button>
 
-                {/* Collapsible nav links */}
                 <div className={`collapse navbar-collapse${isOpen ? ' show' : ''}`} id="navbarNav">
                     <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li className="nav-item">

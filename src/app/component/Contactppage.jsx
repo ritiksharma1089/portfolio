@@ -15,8 +15,8 @@ const ContactPage = () => {
   };
 
   const submitform = async () => {
-    // e.preventDefault();
-    console.log(formdata); // Replace with actual logic (emailjs, etc.)
+
+    console.log(formdata); 
     
   const res = await fetch('/api/contact', {
     method: 'POST',
@@ -88,7 +88,7 @@ return (
                     </div>
                 </div>
 
-                {/* Right Side */}
+             
                  <div className="col-md-7">
                     <div className="bg-dark border border-secondary rounded-4 p-4">
                         <h4 className="text-info mb-4">Send a Message</h4>

@@ -7,18 +7,16 @@ import { FaGithub, FaLinkedin } from 'react-icons/fa';
 export default function MainHero() {
   const [typingKey, setTypingKey] = useState(0);
 
-  // Looping animation effect to reset the typing line
   useEffect(() => {
     const interval = setInterval(() => {
       setTypingKey(prev => prev + 1);
-    }, 4000); // Reset every 4 seconds
+    }, 4000); 
     return () => clearInterval(interval);
   }, []);
 
   return (
     <section className="d-flex flex-column justify-content-center align-items-center text-center bg-black text-white min-vh-100 px-3">
 
-      {/* Greeting */}
       <motion.h1
         className="display-1 fw-bold mb-3"
         initial={{ opacity: 0, y: -40 }}
@@ -28,9 +26,8 @@ export default function MainHero() {
         Hii, I'm <span className="text-primary">Rijik</span>
       </motion.h1>
 
-      {/* Typing Line */}
       <motion.p
-        key={typingKey} // Triggers re-render to repeat animation
+        key={typingKey} 
         className="fs-4 text-secondary typewriter mb-5"
         initial={{ x: -100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}
@@ -39,7 +36,6 @@ export default function MainHero() {
         <span className="typing">Computer Science Student</span>
       </motion.p>
 
-      {/* CTA Buttons */}
       <motion.div
         className="d-flex flex-wrap justify-content-center gap-3 mb-4"
         initial={{ opacity: 0, y: 30 }}
@@ -60,7 +56,6 @@ export default function MainHero() {
         </a>
       </motion.div>
 
-      {/* Social Buttons */}
       <motion.div
         className="d-flex gap-3"
         initial={{ opacity: 0, scale: 0.8 }}
@@ -84,8 +79,6 @@ export default function MainHero() {
           LinkedIn
         </a>
       </motion.div>
-
-      {/* Typing Animation Styling */}
       <style jsx>{`
         .typewriter .typing {
           display: inline-block;

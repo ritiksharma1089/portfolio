@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Card = ({ title, description, image, githubLink }) => {
+const Card = ({ title, description, image, githubLink,source }) => {
   return (
     <div
       className="card bg-dark text-light shadow-sm border border-secondary rounded-4"
@@ -18,7 +18,7 @@ const Card = ({ title, description, image, githubLink }) => {
           {description}
         </p>
         <a
-          href={githubLink}
+          href={source}
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline-light rounded-pill btn-sm"

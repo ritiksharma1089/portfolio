@@ -1,4 +1,4 @@
-'use client'; // for App Router; remove this if using Pages Router
+'use client'; 
 
 import { motion } from 'framer-motion';
 

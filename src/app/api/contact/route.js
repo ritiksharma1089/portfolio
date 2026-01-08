@@ -1,4 +1,4 @@
-// app/api/contact/route.js
+
 import nodemailer from 'nodemailer';
 
 export async function POST(request) {
@@ -6,7 +6,7 @@ export async function POST(request) {
 
   try {
     const transporter = nodemailer.createTransport({
-      service: 'gmail', // or use SMTP config
+      service: 'gmail',
       auth: {
         user: process.env.EMAIL_USER,
         pass: process.env.EMAIL_PASS,
